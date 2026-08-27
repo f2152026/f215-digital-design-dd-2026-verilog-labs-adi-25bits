@@ -6,12 +6,7 @@ module dut(
   output        cout
 );
 
-  cla64_blocked u_blocked (
-    .a   (a),
-    .b   (b),
-    .cin (cin),
-    .sum (sum),
-    .cout(cout)
-  );
+  
+  cla64_blocked u_blocked (.a(a), .b(b), .cin(cin), .sum(sum), .cout(cout));
 
 endmodule
